@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>CEMELI | Inicio</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+
+    @keyframes scroll {
+
+      0% { transform: translateX(0); }
+
+      100% { transform: translateX(-50%); }
+
+    }
+
+    .scroll-track {
+
+      display: flex;
+
+      width: max-content;
+
+      animation: scroll 30s linear infinite;
+
+    }
+
+    .scroll-track:hover {
+
+      animation-play-state: paused;
+
+    }
+
+  </style>
+
+</head>
+
+<body class="bg-slate-50">
+
+  <nav class="bg-[#051525] shadow-xl sticky top-0 z-50">
+
+    <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <a href="index.html" class="flex items-center gap-3">
+
+        <img src="Logo de cemeli.webp" alt="Logo" class="h-12 w-auto bg-white rounded-full p-1">
+
+        <span class="text-white text-xl font-bold">CEMELI <span class="text-[#28A745]">Médico</span></span>
+
+      </a>
+
+      <div class="hidden md:flex items-center gap-8">
+
+        <a href="index.html" class="text-[#28A745] font-medium border-b-2 border-[#28A745] pb-1">Inicio</a>
+
+        <a href="Nosotros.html" class="text-gray-300 hover:text-[#28A745] transition-colors">Nosotros</a>
+
+        <a href="Servicios.html" class="text-gray-300 hover:text-[#28A745] transition-colors">Servicios</a>
+
+        <a href="Citas.html" class="bg-[#28A745] text-white px-4 py-2 rounded-lg hover:bg-green-600">Citas</a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+
+
+  <header class="relative py-32 text-center text-white bg-cover bg-center bg-no-repeat" style="background-image: url('doctor-atendiendo.jpg');">
+
+    <div class="absolute inset-0 bg-[#051525]/75"></div>
+
+    <div class="relative z-10 px-6">
+
+      <h1 class="text-5xl font-extrabold mb-6">Su salud en manos de <span class="text-[#28A745]">expertos</span></h1>
+
+      <p class="text-xl text-gray-300 mb-10 max-w-2xl mx-auto">Atención médica integral con tecnología avanzada y el compromiso humano que usted merece.</p>
+
+      <a href="Citas.html" class="bg-[#28A745] text-white px-10 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform inline-block shadow-lg">Agendar ahora</a>
+
+    </div>
+
+  </header>
+
+
+
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+
+    <div class="text-center mb-12">
+
+      <h2 class="text-3xl font-bold text-[#051525]">Nuestros Especialistas</h2>
+
+      <div class="w-16 h-1 bg-[#28A745] mx-auto mt-2"></div>
+
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition-transform hover:-translate-y-2">
+
+        <img src="Captura de pantalla 2026-01-28 223354.png" class="w-full h-64 object-cover" alt="Dra. Yamilka Germosen">
+
+        <div class="p-5 text-center">
+
+          <h4 class="font-bold text-[#051525] text-lg">Dra. Yamilka Germosen</h4>
+
+          <p class="text-[#28A745] text-sm font-semibold uppercase">Médico Internista</p>
+
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition-transform hover:-translate-y-2">
+
+        <img src="a5b6a998-66cd-4e72-aad1-7e8f22dbf039.jpg" class="w-full h-64 object-cover" alt="Dra. Wanda Mireles">
+
+        <div class="p-5 text-center">
+
+          <h4 class="font-bold text-[#051525] text-lg">Dra. Wanda Mireles</h4>
+
+          <p class="text-[#28A745] text-sm font-semibold uppercase">Ginecóloga Obstetra</p>
+
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition-transform hover:-translate-y-2">
+
+        <img src="78bab2c4-d213-4397-ac1c-1c44d7733596.jpg" class="w-full h-64 object-cover" alt="Dr. Juan Alberto Brito">
+
+        <div class="p-5 text-center">
+
+          <h4 class="font-bold text-[#051525] text-lg">Dr. Juan Alberto Brito</h4>
+
+          <p class="text-[#28A745] text-[10px] font-semibold uppercase">Ortopeda, Traumatólogo y Ozonoterapeuta</p>
+
+        </div>
+
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-md overflow-hidden border border-gray-100 transition-transform hover:-translate-y-2">
+
+        <img src="5e83516a-90b8-4b9f-827f-24fb371d742e.jpg" class="w-full h-64 object-cover" alt="Dr. José O. Santiago">
+
+        <div class="p-5 text-center">
+
+          <h4 class="font-bold text-[#051525] text-lg">Dr. José O. Santiago</h4>
+
+          <p class="text-[#28A745] text-sm font-semibold uppercase">Pediatra Neonatólogo</p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="py-16 px-6 max-w-7xl mx-auto bg-slate-100/50 rounded-3xl">
+
+    <div class="text-center mb-12">
+
+      <h2 class="text-3xl font-bold text-[#051525] uppercase">Últimas Noticias</h2>
+
+      <div class="w-16 h-1 bg-[#28A745] mx-auto mt-2"></div>
+
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <article class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+
+        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&q=80&w=500" class="h-48 w-full object-cover">
+
+        <div class="p-6">
+
+          <h4 class="font-bold text-[#051525] text-lg mb-2 uppercase leading-tight">La importancia del chequeo médico anual</h4>
+
+          <p class="text-gray-600 text-sm mb-4">Muchas personas dejan su salud en un segundo plano hasta que surge una enfermedad...</p>
+
+          <a href="#" class="text-[#28A745] font-bold text-xs uppercase tracking-widest">Conoce más →</a>
+
+        </div>
+
+      </article>
+
+      <article class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+
+        <img src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&q=80&w=500" class="h-48 w-full object-cover">
+
+        <div class="p-6">
+
+          <h4 class="font-bold text-[#051525] text-lg mb-2 uppercase leading-tight">5 consejos claves para prevenir la diabetes</h4>
+
+          <p class="text-gray-600 text-sm mb-4">Noviembre es el Mes de la Concienciación sobre la Diabetes, una oportunidad ideal para aprender...</p>
+
+          <a href="#" class="text-[#28A745] font-bold text-xs uppercase tracking-widest">Conoce más →</a>
+
+        </div>
+
+      </article>
+
+      <article class="bg-white rounded-3xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
+
+        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&q=80&w=500" class="h-48 w-full object-cover">
+
+        <div class="p-6">
+
+          <h4 class="font-bold text-[#051525] text-lg mb-2 uppercase leading-tight">10 signos de alerta que no debes ignorar</h4>
+
+          <p class="text-gray-600 text-sm mb-4">En ocasiones, nuestro cuerpo nos envía señales que podrían pasar desapercibidas...</p>
+
+          <a href="#" class="text-[#28A745] font-bold text-xs uppercase tracking-widest">Conoce más →</a>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </section>
+
+
+
+  <section class="py-16 bg-[#051525] overflow-hidden mt-12 border-t-4 border-[#28A745]">
+
+    <div class="text-center mb-8">
+
+      <h3 class="text-white text-xl font-bold uppercase tracking-widest">Seguros que aceptamos</h3>
+
+    </div>
+
+    <div class="scroll-track gap-16 items-center">
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">Humano Seguros</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">ARS UNIVERSAL</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">FUTURO</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">Primera ARS</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">MAPFRE Salud</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">Humano Seguros</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">ARS UNIVERSAL</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">FUTURO</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">Primera ARS</span>
+
+      <span class="text-white/60 font-black text-2xl whitespace-nowrap uppercase italic px-4">MAPFRE Salud</span>
+
+    </div>
+
+  </section>
+
+
+
+</body>
+
+</html>
